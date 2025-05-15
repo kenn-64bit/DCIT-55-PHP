@@ -7,17 +7,13 @@ $conn=mysqli_connect("localhost","root","","phpsample");
 </head>
 <body>
 	<center>
-	<a href="form.php">+Add New Student</a>&nbsp;
-
-	<a href="total.php">+Check Total Students</a>
+	<a href="form.php"> +Add New Student</a>&nbsp;
+	<a href="total.php"> ?Check Total Students</a>
 		<table border="1" width="80%" style="border-collapse:collapse;">
 
 			<tr>
-				<th>Student Number</th>
-				<th>First Name</th>
-				<th>Last Name</th>
-				<th>Course</th>
-				<th>&nbsp;</th>
+				<th>Department</th>
+				<th>Total Students</th>
 			</tr>
 
 		<?php
@@ -30,8 +26,6 @@ $conn=mysqli_connect("localhost","root","","phpsample");
 			<td><?php echo $row['fName'];?></td>
 			<td><?php echo $row['lName'];?></td>
 			<td><?php echo $row['course'];?></td>
-			<td align="center"><a href="delete.php?studentnum=<?php echo $row['studentnum'];?>" onclick="return confirm('Are you sure you want to delete this record?');">X</a></td>
-			</tr>
 			<?php
 		}
 		?>
