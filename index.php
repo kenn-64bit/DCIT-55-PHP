@@ -7,7 +7,8 @@ $conn=mysqli_connect("localhost","root","","phpsample");
 </head>
 <body>
 	<center>
-	<a href="form.php">+Add New Student</a>
+	<a href="form.php">+Add New Student</a>&nbsp;
+
 	<a href="total.php">+Check Total Students</a>
 		<table border="1" width="80%" style="border-collapse:collapse;">
 
