@@ -1,3 +1,13 @@
+<html>
+<head>
+<title>Student Record</title>
+<?php
+$conn=mysqli_connect("localhost","root","","phpsample");
+?>
+</head>
+<body>
+<center>
+<a href="form.php">+Add New Student</a>
 <table border="1" width="80%" style="border-collapse:collapse;">
 <tr>
 <th>Student Number</th>
