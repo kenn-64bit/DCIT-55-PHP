@@ -36,7 +36,7 @@ $conn=mysqli_connect("localhost","root","","phpsample");
         <td><?php echo $row['email'];?></td>
         <td><?php echo $row['birthdate'];?></td>
         <td align="center"><a href="delete.php?studentnum=<?php echo $row['studentnum'];?>" onclick="return confirm('Are you sure you want to delete this record?');">X</a></td>
-        <td align="center"><a href="form_update.php?studentnum=<?php echo $row['studentnum'];?>" onclick="return confirm('Are you sure you want to edit this record?');">X</a></td>
+        <td align="center"><a href="edit.php?studentnum=<?php echo $row['studentnum'];?>" onclick="return confirm('Are you sure you want to edit this record?');">X</a></td>
 
         </tr>
         <?php
