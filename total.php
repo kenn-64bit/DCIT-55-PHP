@@ -8,8 +8,9 @@ $conn=mysqli_connect("localhost","root","","phpsample");
 </head>
 <body>
     <center>
-    <a href="form.php"> +Add New Student</a>&nbsp;
-    <a href="total.php"> ?Check Total Students</a>
+    <a href="form.php"> -Return to List</a>&nbsp;
+    
+    <a href="form.php"> +Add New Student</a>
     
     <h2>Students by Course</h2>
         <table border="1" width="80%" style="border-collapse:collapse;">
@@ -42,29 +43,6 @@ $conn=mysqli_connect("localhost","root","","phpsample");
         </tr>
         </table>
         
-        <h2>Student List</h2>
-        <table border="1" width="80%" style="border-collapse:collapse;">
-            <tr>
-                <th>Student Number</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Course</th>
-            </tr>
-
-        <?php
-        $result = mysqli_query($conn, "SELECT * FROM student ORDER BY lName ASC");
-        while($row = mysqli_fetch_array($result))
-        {
-            ?>
-            <tr>
-                <td><?php echo $row['studentnum']; ?></td>
-                <td><?php echo $row['fName']; ?></td>
-                <td><?php echo $row['lName']; ?></td>
-                <td><?php echo $row['course']; ?></td>
-            </tr>
-            <?php
-        }
-        ?>
         </table>
     </center>
 </body>
