@@ -8,7 +8,7 @@ $conn=mysqli_connect("localhost","root","","phpsample");
 </head>
 <body>
     <center>
-    <a href="form.php"> -Return to List</a>&nbsp;
+    <a href="index.php"> -Return to List</a>&nbsp;
     
     <a href="form.php"> +Add New Student</a>
     
@@ -20,7 +20,7 @@ $conn=mysqli_connect("localhost","root","","phpsample");
             </tr>
 
         <?php
-        // Get count of students by course
+        
         $courseQuery = mysqli_query($conn, "SELECT course, COUNT(*) as total FROM student GROUP BY course ORDER BY course ASC");
         
         $totalStudents = 0;
