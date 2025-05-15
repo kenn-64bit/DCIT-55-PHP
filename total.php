@@ -10,8 +10,6 @@ $conn=mysqli_connect("localhost","root","","phpsample");
     <center>
     <a href="index.php"> -Return to List</a>&nbsp;
     
-    <a href="form.php"> +Add New Student</a>
-    
     <h2>Students by Course</h2>
         <table border="1" width="80%" style="border-collapse:collapse;">
             <tr>
