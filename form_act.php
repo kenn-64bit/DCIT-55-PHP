@@ -15,7 +15,7 @@ if(mysqli_num_rows($result) > 0) {
     window.location='form.php';
     </script>";
 } else {
-    mysqli_query($conn,"INSERT INTO student VALUES ('$studentnum','$fName','$lName','$course','$email','$birthdate')");
+    mysqli_query($conn,"INSERT INTO student VALUES('$studentnum','$fName','$lName','$course','$email','$birthdate')");
     echo "<script>
     alert('New Record Added!');
     window.location='index.php';
