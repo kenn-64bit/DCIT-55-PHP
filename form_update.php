@@ -14,17 +14,14 @@ $row = mysqli_fetch_array($result);
 </head>
 <body>
     <h2>Edit Student Record</h2>
-    <form method="POST" action="update.php">
-        <input type="hidden" name="studentnum" value="<?php echo $row['studentnum']; ?>">
-        
-        <label>First Name:</label>
-        <input type="text" name="firstname" value="<?php echo $row['firstname']; ?>"><br><br>
-        
-        <label>Last Name:</label>
-        <input type="text" name="lastname" value="<?php echo $row['lastname']; ?>"><br><br>
-        
-
-        <input type="submit" value="Update">
+    <form method="post" action="form_act.php">
+        Student Number <input type="text" name="studentnum" value="<?php echo $row['studentnum']; ?>"><br>
+        First Name <input type="text" name="fName" value="<?php echo $row['fName']; ?>"><br>
+        Last Name <input type="text" name="lName" value="<?php echo $row['lName']; ?>"><br>
+        Course <input type="text" name="course" value="<?php echo $row['course']; ?>"><br>
+        Email <input type="email" name="email" value="<?php echo $row['email']; ?>"><br>
+        Birthdate <input type="date" name="birthdate" value="<?php echo $row['birthdate']; ?>"><br>
+        <input type="submit" value="SUBMIT">
     </form>
 </body>
 </html>
