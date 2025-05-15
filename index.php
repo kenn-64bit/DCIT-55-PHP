@@ -20,5 +20,5 @@ while($row=mysqli_fetch_array($result))
 	</tr>
 	<?php
 }
-?>asd
+?>
 </table>
