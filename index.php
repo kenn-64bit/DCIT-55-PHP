@@ -16,6 +16,7 @@ while($row=mysqli_fetch_array($result))
 	<td><?php echo $row['fName'];?></td>
 	<td><?php echo $row['lName'];?></td>
 	<td><?php echo $row['course'];?></td>
+	<td><?php echo $row['birthdate'];?></td>
 	<td align="center"><a href="delete.php?studentnum=<?php echo $row['studentnum'];?>" onclick="return confirm('Are you sure you want to delete this record?');">X</a></td>
 	</tr>
 	<?php
